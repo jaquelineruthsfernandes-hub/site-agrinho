@@ -4,58 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte: Futuro Sustentável</title>
+    <title>Agro Forte | Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <nav class="container">
-            <div class="logo">Agro<span>Forte</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
-                <li><a href="#tecnologia">Tecnologia</a></li>
-                <li><a href="#contato" class="btn-nav">Fale Conosco</a></li>
+            <div class="logo">AGRO<b>FORTE</b></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#busca">Conhecimento</a></li>
+                <li><a href="#potencial">Potencialidades</a></li>
             </ul>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <button class="mobile-menu" id="mobile-menu">☰</button>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <div class="hero-content container">
-            <h1>Equilíbrio entre Produção e Meio Ambiente</h1>
-            <p>O futuro do agronegócio é verde, tecnológico e essencial para a vida.</p>
-            <a href="#sustentabilidade" class="btn-main">Saiba Mais</a>
-        </div>
-    </section>
-
-    <section id="sustentabilidade" class="features container">
-        <h2>Pilares do Futuro</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Preservação</h3>
-                <p>Uso consciente de recursos hídricos e proteção da biodiversidade local.</p>
-            </div>
-            <div class="card">
-                <h3>Eficiência</h3>
-                <p>Aumento da produtividade por hectare, reduzindo a necessidade de expansão.</p>
-            </div>
-            <div class="card">
-                <h3>Tecnologia</h3>
-                <p>Monitoramento via satélite e agricultura de precisão para menor impacto.</p>
+        <div class="hero-overlay">
+            <div class="container hero-content">
+                <h1>Agricultura Familiar</h1>
+                <p>O equilíbrio vital entre a produtividade e a preservação ambiental.</p>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Ex: Cooperativismo, Orgânicos, Crédito...">
+                    <button id="search-btn">Buscar</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer id="contato">
+    <main class="container">
+        <section id="busca" class="results-section">
+            <h2 class="section-title">Resultados da Busca</h2>
+            <div id="results-container" class="grid-results">
+                <p class="placeholder-text">Digite um termo acima para explorar o agro sustentável.</p>
+            </div>
+        </section>
+
+        <section id="potencial" class="info-highlights">
+            <h2 class="section-title">Potencialidades do Setor</h2>
+            <div class="grid-info">
+                <article class="info-card">
+                    <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c3023?auto=format&fit=crop&w=600&q=80" alt="Horta orgânica">
+                    <h3>Sustentabilidade</h3>
+                    <p>A agricultura familiar responde por cerca de 70% dos alimentos consumidos no Brasil, utilizando técnicas de baixo impacto.</p>
+                </article>
+                <article class="info-card">
+                    <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=600&q=80" alt="Mãos com sementes">
+                    <h3>Biodiversidade</h3>
+                    <p>Preservação de sementes crioulas e manutenção de biomas nativos através do manejo consciente.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
         <div class="container">
-            <p>&copy; 2024 Agro Forte - Cultivando um amanhã melhor.</p>
+            <p>Fontes de Referência: EMBRAPA, Ministério do Desenvolvimento Agrário, IBGE.</p>
+            <p>&copy; 2024 Agro Forte Futuro Sustentável.</p>
         </div>
     </footer>
 
